@@ -43,6 +43,7 @@ El material que contine este repositorio es a modo de aprendizaje. En ningún mo
 ### Como ver los ejemplos ###
 * Descargar el repositorio
 * Crear una base de datos local
+* Importar la base de datos de ejemplo `api/config/db.sql`
 * Editar los parámetros de conexión en el archivo `api/config/databases.ini`
 * Darle permisos de escritura `chmod -R 777 public/files` a la carpeta `api/public/files`
 * Instalar los paquetes de php `composer install`
