@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset=<?= APP_CHARSET ?> >
+    <title>KumbiaPHP Framework</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="<?= PUBLIC_PATH; ?>css/mdi.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="<?= PUBLIC_PATH; ?>css/app.css" rel="stylesheet" type="text/css" media="all" />
+  </head>
+  <body class="is-loading">
+
+    <!-- Loader -->
+    <div class="main-loader">
+        <div class="main-loader-animation"></div>
+    </div>
+
+    <div id="flash-message"></div>
+    <div id="app"><?php View::content() ?></div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.serializeJSON/2.8.1/jquery.serializejson.min.js"></script>
+    <script type="text/javascript" src="<?= PUBLIC_PATH; ?>javascript/api.js"></script>
+    <script type="text/javascript" src="<?= PUBLIC_PATH; ?>javascript/flash.js"></script>
+    <script type="text/javascript" src="<?= PUBLIC_PATH; ?>javascript/app.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,7 @@
+# Ignore All
+*
+
+# Except
+!.gitignore
+!index.html
+!index.php

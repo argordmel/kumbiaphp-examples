@@ -1,0 +1,13 @@
+// Foundation Core
+@import "./modules";
+
+@import "./components/index";
+@import "./pages/index";
+
+body {
+    background: #f2f2f2;
+    -webkit-overflow-scrolling: touch;
+    a[disabled] {
+        cursor: not-allowed;
+    }
+}
