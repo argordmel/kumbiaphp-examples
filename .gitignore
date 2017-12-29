@@ -35,6 +35,7 @@ Thumbs.db
 .project
 .settings
 .tmproj
+.vscode
 *.esproj
 nbproject
 .netbeans.xml
