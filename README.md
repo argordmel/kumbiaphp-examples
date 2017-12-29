@@ -15,20 +15,21 @@ Fácil, rápido y en español
 Bienvenidos al set de ejemplos de KumbiaPHP Framework Versión 1.0
 
 Únete al Slack de KumbiaPHP
-------------
+---
 http://slack.kumbiaphp.com
 
 Requerimientos
-------------
+---
 * PHP 5.6 o 7
-* NodeJS (usado para editar el front)
-* Composer (Para instalar los paquetes necesarios)
+* Composer (Para instalar los paquetes y librerías necesarios de PHP)
+* NodeJS (para usar el livereload (BrowserSync)
 
 Nota al desarrollador
-------------
+---
 El material que contine este repositorio es a modo de aprendizaje. En ningún momento el autor se hará responsable por el uso final.
 
-### Que contiene? ###
+Que contiene?
+___
 * Ejemplo de uso a modo de API con JWT (Json Web Tokens) (en proceso)
 * Ejemplo de un CRUD basado en API (en proceso)
 * Ejemplo de scaffold en una API (en proceso)
@@ -40,17 +41,20 @@ El material que contine este repositorio es a modo de aprendizaje. En ningún mo
 * Ejemplo de uso de SASS
 * Ejemplo de uso de BrowserSync
 
-### Como ver los ejemplos ###
+Como ver los ejemplos
+___
 * Descargar el repositorio
 * Crear una base de datos local
 * Importar la base de datos de ejemplo `api/config/db.sql`
 * Editar los parámetros de conexión en el archivo `api/config/databases.ini`
 * Darle permisos de escritura `chmod -R 777 public/files` a la carpeta `api/public/files`
 * Instalar los paquetes de php `composer install`
-* Instalar los paquetes de node `yarn install` o `npm install`
-* Activar el BrowserSync `npm run gulp` (solo si quieres editar el front)
 
+Activar el LiveReload (BrowserSync) solo si quieres editar el front
+___
+* Instalar los paquetes de node `yarn install` o `npm install`
+* Activar el BrowserSync `npm run gulp`
 
 Licencia
-===
+___
 New BSD
