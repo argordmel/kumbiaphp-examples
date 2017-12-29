@@ -35,7 +35,7 @@ class ActiveRecord extends KumbiaActiveRecord {
 
         // Utilidad para cambiar la base de datos
         // y conexión dependiendo del host
-        $currentHost = $_SERVER['HTTP_HOST'];
+        $currentHost = Input::server('HTTP_HOST');
         if (strpos($currentHost, "ivanmel") !== FALSE) {
             $this->set_database('development');
         } else if (strpos($currentHost, "staging") !== FALSE) {
@@ -53,8 +53,8 @@ class ActiveRecord extends KumbiaActiveRecord {
      */
     protected function _getSystem($restore = false) {
         $sql = $this->sql("SHOW variables WHERE variable_name= 'basedir'");
-        $sql = mysqli_fetch_row($sql);
-        $base = $sql[1];
+        $result = mysqli_fetch_row($sql);
+        $base = $result[1];
         $raiz = substr($base, 0, 1);
         if ($restore) { //Para restarurar
             $system = ($raiz == '/') ? 'mysql' : $base . '\bin\mysql';
