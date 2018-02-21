@@ -1,0 +1,36 @@
+/**
+ * Stats Content
+ *
+ * @version 1.0
+ */
+.stats-content {
+    margin-bottom: 1rem;
+    .stats-content__counter {
+        ul {
+            li {
+                max-width: 100px;
+                line-height: 1.1;
+                b {
+                    font-size: 2rem;
+                    line-height: 1.1;
+                }
+                p {
+                    margin-bottom: 0;
+                    line-height: 1.1;
+                }
+
+            }
+        }
+    }
+    .stats-content__export {
+        padding-top: 0.5rem;
+        a {
+            // margin-top: 1.875rem;
+            i {
+                color: #fff;
+                padding-right: 0.5rem;
+            }
+        }
+    }
+}
+

@@ -28,7 +28,7 @@ DwExcel::create('Reporte de Usuarios', function($excel) use ($data) {
             $sheet->setCell("B$cont", $usuario->nombre);
             $sheet->setCell("C$cont", $usuario->email);
             $sheet->setCell("D$cont", $usuario->usuario_at);
-            $sheet->setCell("E$cont", $usuario->estado ? 'ACTIVO' : 'INACTIVO');
+            $sheet->setCell("E$cont", $usuario->activo ? 'ACTIVO' : 'INACTIVO');
 
             $cont++;
         }

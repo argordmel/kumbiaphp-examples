@@ -162,21 +162,23 @@ class Usuario extends ActiveRecord {
         $page = Params::get('page');
         $per_page = Params::get('per_page');
 
+
         // Para las consultas
         $search = Params::get('s');
 
         $columns    = 'usuario.*';
         $order      = "usuario.nombre ASC";
+        $conditions = "usuario.id > 0";
 
         if (!empty($search)) {
             $conditions .= " AND (nombre LIKE '%$search%' OR email LIKE '%$search%')";
         }
 
         if ($page === 'all') {
-            return $this->find("columns: $columns", "join: $join", "conditions: $conditions", "order: $order");
+            return $this->find("columns: $columns", "conditions: $conditions", "order: $order");
         }
 
-        return $this->paginated("columns: $columns", "join: $join", "conditions: $conditions", "order: $order", "page: $page", "per_page: $per_page");
+        return $this->paginate("columns: $columns", "conditions: $conditions", "order: $order", "page: $page", "per_page: $per_page");
 
     }
 

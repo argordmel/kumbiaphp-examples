@@ -4,7 +4,7 @@
 
         url: '',
 
-        lastError: { },
+        lastError: {},
 
         get: function (source) {
             return $.api._send(source, 'GET');
@@ -96,8 +96,9 @@
 
     };
 
-    var src = $('script:last').attr('src');
-    $.api.url = src.substr(0, src.length - 37) + 'api/';
-
+    var src = $('#script-api').attr('src');
+    var srcOptional = $('script:last').attr('src'); // /javascript/api.js (17 caracteres)
+    $.api.url = (src || srcOptional).substr(0, (src || srcOptional).length - 17) + 'api/';
+    
 }(jQuery));
 

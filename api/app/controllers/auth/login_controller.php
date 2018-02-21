@@ -1,7 +1,5 @@
 <?php
 
-Load::models('usuario');
-
 class LoginController extends RestController {
 
     /**
