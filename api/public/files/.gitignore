@@ -1,9 +1,0 @@
-# Ignore All
-*
-
-# Except
-!ticket
-!.gitignore
-!index.html
-!index.php
-!*.json
